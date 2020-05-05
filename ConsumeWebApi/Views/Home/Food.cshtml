@@ -1,33 +1,57 @@
 ﻿﻿@{
-    ViewBag.Title = "Home";
+    ViewBag.Title = "Food";
 }
+
 <div class="four-images">
     <div class="cell">
-        <a href="@Url.Action("Drinks", "Home")">
-            <img src="~/Pictures/Drinks.jpg" alt="Drinks" style="width:100%"/>
-            <div class="text"> Drinks </div>
+        <a href="@Url.Action("Meat", "Home")">
+            <img src="~/Pictures/Meat.jpg" alt="Drinks" style="width:100%"/>
+            <div class="text"> Meat </div>
         </a>
     </div>
+    
     <div class="cell">
-        <a href="@Url.Action("Food", "Home")">
-            <img src="~/Pictures/Food.jpg" alt="Food" style="width:100%"/>
-            <div class="text"> Food </div>
-         </a>
+        <a href="@Url.Action("Snacks", "Home")">
+            <img src="~/Pictures/Snacks.jpg" alt="Food" style="width:100%"/>
+            <div class="text"> Snacks </div>
+        </a>
     </div>
+    
+    <div class="cell">
+        <a href="@Url.Action("Soup", "Home")">
+            <img src="~/Pictures/Soup.jpg" alt="Food" style="width:100%"/>
+            <div class="text"> Soup </div>
+        </a>
+    </div>
+    
+    <div class="cell">
+        <a href="@Url.Action("Dessert", "Home")">
+            <img src="~/Pictures/Dessert.jpg" alt="Food" style="width:100%"/>
+            <div class="text"> Dessert </div>
+        </a>
+    </div>
+
 </div>
 
 <style>
+.four-images{
+column-count: 2;
+}
  /* Picture alignment */
 .cell{
-    width:50%;
-    height: 50%;
+
+    width:100%;
+    height: 70%;
     display:inline-block;
     position:relative;
     transition:.3s;
-    padding:5px;
-    float:left;
+    padding:2px;
     cursor: pointer;
     border-radius: 5px;
+    column-gap: 0;
+    overflow: hidden;
+    
+    
   }
   /* Text alignment */
  .cell .text{
@@ -51,6 +75,9 @@
     height:100%;
     transition:.5s;
     border-radius:4px;
+    margin-top: 8px;
+     
+    
   }
   /*  Blur intensity  */
   .cell:hover img{

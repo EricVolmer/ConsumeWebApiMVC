@@ -136,6 +136,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pictures\Dessert.jpg" />
+    <Content Include="Pictures\Drinks.jpg" />
+    <Content Include="Pictures\Food.jpg" />
+    <Content Include="Pictures\Meat.jpg" />
+    <Content Include="Pictures\Snacks.jpg" />
+    <Content Include="Pictures\Soup.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -149,7 +155,15 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Home\Dessert.cshtml" />
+    <Content Include="Views\Home\Drinks.cshtml" />
+    <Content Include="Views\Home\Food.cshtml" />
     <Content Include="Views\Home\GetItems.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Meat.cshtml" />
+    <Content Include="Views\Home\Snacks.cshtml" />
+    <Content Include="Views\Home\Soup.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -160,8 +174,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

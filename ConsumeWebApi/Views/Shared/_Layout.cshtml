@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Restaurant</title>
+    <title>@ViewBag.Title - Intelligent Restaurant</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,12 +15,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            @Html.ActionLink("Main Page", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+            @Html.ActionLink("Application name", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Item List", "GetItems", "Home")</li>
-
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Drinks", "Drinks", "Home")</li>
+                <li>@Html.ActionLink("Food", "Food", "Home")</li>
             </ul>
         </div>
     </div>
@@ -29,13 +29,10 @@
 <div class="container body-content">
     @RenderBody()
     <hr/>
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Sep 3 Re-Exam</p>
-    </footer>
 </div>
 
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
-@RenderSection("scripts", false)
+@RenderSection("scripts", required: false)
 </body>
 </html>

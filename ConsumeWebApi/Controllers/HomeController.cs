@@ -11,11 +11,6 @@ namespace ConsumeWebApi.Controllers
     public class HomeController : Controller
     {
         private readonly string baseUrl = "http://localhost:8080/api/";
-
-        public ActionResult Index()
-        {
-            return View();
-        }
         
         public ActionResult GetItems()
         {
@@ -38,6 +33,42 @@ namespace ConsumeWebApi.Controllers
 
                 return View(items);
             }
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult Food()
+        {
+            
+            return View();
+        }
+
+        public ActionResult Drinks()
+        {
+            
+            return View();
+        }
+
+        public ActionResult Meat()
+        {
+            return View();
+        }
+
+        public ActionResult Soup()
+        {
+            return View();
+        }
+
+        public ActionResult Snacks()
+        {
+            return View();
+        }
+
+        public ActionResult Dessert()
+        {
+            return View();
         }
     }
 }
